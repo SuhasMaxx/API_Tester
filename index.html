@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/core.css">
+        <link rel="stylesheet" href="styles/spinner.css">
+        <script src="scripts/main.js" type="text/javascript"></script>
+    </head>
+    <body onload="loadElements()">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h2>API Tester</h2>
+        <fieldset>
+            <label><b>Enter URL:</b> &nbsp;</label><input type="text" class="input-url" placeholder="ex. http://localhost:8080/locations/" name="url"/>
+            <button onclick="callApi()">GET</button>
+        </fieldset>
+        <fieldset id="options-area">
+            <label class="section-label">Optional Headers</label>
+            <button id="add-options-btn" onclick="addOptions()">Add</button>
+        </fieldset>
+        <fieldset id="output" style="display: none;">
+            <h3>Output:</h3>
+            <pre id="output-area" class="output-view"></pre>
+        </fieldset>
+        <div id="error" style="display: none;"></div>
+        <div class="spinner-container">
+            <div id="spinner" class="lds-ring" style="display: none;"><div></div><div></div><div></div><div></div></div>
+        </div>
+        <footer> Exaple API : https://api.publicapis.org/entries</footer>
+        <script src="" async defer></script>
+    </body>
+    <template id="options-template">
+        <label>Field:&nbsp;</label><input type="text" class="field" placeholder="ex. Authorization"/>&nbsp;&nbsp;
+        <label>Value:&nbsp;</label><input type="text" class="value" placeholder="ex. Basic c29tZXVzZXI6cHN3"/>
+        <div class="close-btn" onclick="removeBlock(event)">X</div>
+    </template>
+</html>
