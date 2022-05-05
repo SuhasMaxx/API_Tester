@@ -3,7 +3,7 @@ A simple UI for testing API response made using Plain Javascript, HTML and CSS
 
 ## Screenshots:
 
-![image](https://user-images.githubusercontent.com/36658328/166812607-df2fc8b0-5e32-4a93-915e-186053c75ace.png)
+![Resized](https://user-images.githubusercontent.com/36658328/166997230-641e5b60-5f47-404b-bbf5-2fe553299d0d.png)
 
 ## Features:
 - Specify URL to fetch
